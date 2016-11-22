@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>actionsheet</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Action Sheet"
+                                                                   message:@"This is an action sheet."
+                                                            preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction *button1 = [UIAlertAction actionWithTitle:@"Button Title 1" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+        //code to run once button is pressed
+        
+    }];
+    UIAlertAction *button2 = [UIAlertAction actionWithTitle:@"Button Title 2" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        //code to run once button is pressed
+        
+    }];
+    
+    [alert addAction:button1];
+    [alert addAction:button2];
+    
+    UIPopoverPresentationController *popPresenter = [alert popoverPresentationController];
+    popPresenter.sourceView = sender;
+    popPresenter.sourceRect = sender.bounds;
+    [self presentViewController:alert animated:YES completion:nil];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C1D02A92-F958-4918-B454-17AAA23E6064</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>btn action sheet</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>action sheet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
